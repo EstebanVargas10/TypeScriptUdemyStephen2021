@@ -136989,7 +136989,8 @@ var User_1 = require("./User");
 
 var Company_1 = require("./Company");
 
-var CustomMap_1 = require("./CustomMap");
+var CustomMap_1 = require("./CustomMap"); // import { Mappable } from './CustomMap';
+
 
 var user = new User_1.User();
 var company = new Company_1.Company();
