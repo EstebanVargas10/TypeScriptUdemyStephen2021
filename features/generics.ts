@@ -22,4 +22,18 @@ class ArrayOfAnything<T> {
   }
 }
 
-new ArrayOfAnything<String>(['a', 'b', 'c']);
+const arr = new ArrayOfAnything(['a', 'b', 'c']);
+
+function printString(arr: string[]) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+function printAnything<T>(arr: T[]): void {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+printAnything<string>(['a', 'b', 'c']);
